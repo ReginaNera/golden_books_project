@@ -1,0 +1,197 @@
+{
+  "books": [
+    {
+      "ImageUrl": "../../../assets/images/MoneyPower.png",
+      "Title": "Money Power",
+      "Author": "Name Surname",
+      "Year": 1928,
+      "Categories": [
+        {
+          "id": 1,
+          "name": "General"
+        },
+        {
+          "id": 2,
+          "name": "History"
+        }
+      ],
+      "ISBN": "0123456789",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "ImageUrl": "../../../assets/images/MyFirstLove.png",
+      "Title": "My First Love",
+      "Author": "Name Surname",
+      "Year": 2000,
+      "Categories": [
+        {
+          "id": 1,
+          "name": "General"
+        }
+      ],
+      "ISBN": "0123456789",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "ReviewerName": "Reviewer Name (FRA)",
+      "Review": "“Good overview and important writing lessons for anyone who needs a review or just enjoys books about writing. Very back to basics. Liked this line, which sums up the tips: “Are you telling your story from your unique perspective, with a voice and style that’s clearly all you?” The best writing book I’ve read so far this month though is down there in #10. Check it out. "
+    },
+    {
+      "id": 3,
+      "ImageUrl": "../../../assets/images/MyLittleLife.png",
+      "Title": "My Little Life",
+      "Author": "Name Surname",
+      "Year": 2005,
+      "Categories": [
+        {
+          "id": 3,
+          "name": "Literary"
+        }
+      ],
+      "ISBN": "0123456789",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "ReviewerName": "Reviewer Name (FRA)",
+      "Review": "“Good overview and important writing lessons for anyone who needs a review or just enjoys books about writing. Very back to basics. Liked this line, which sums up the tips: “Are you telling your story from your unique perspective, with a voice and style that’s clearly all you?” The best writing book I’ve read so far this month though is down there in #10. Check it out. "
+    },
+    {
+      "id": 4,
+      "ImageUrl": "../../../assets/images/thelosttrip.png",
+      "Title": "The Lost Trip",
+      "Author": "Name Surname",
+      "Year": 2008,
+      "Categories": [
+        {
+          "id": 5,
+          "name": "Kids"
+        },
+        {
+          "id": 2,
+          "name": "History"
+        }
+      ],
+      "ISBN": "0123456789",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "ReviewerName": "Reviewer Name (FRA)",
+      "Review": "“Good overview and important writing lessons for anyone who needs a review or just enjoys books about writing. Very back to basics. Liked this line, which sums up the tips: “Are you telling your story from your unique perspective, with a voice and style that’s clearly all you?” The best writing book I’ve read so far this month though is down there in #10. Check it out. "
+    },
+    {
+      "id": 5,
+      "ImageUrl": "../../../assets/images/Dark.png",
+      "Title": "Dark",
+      "Author": "Name Surname",
+      "Year": 2018,
+      "Categories": [
+        {
+          "id": 3,
+          "name": "Literary"
+        }
+      ],
+      "ISBN": "0123456789",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "ReviewerName": "Reviewer Name (FRA)",
+      "Review": "“Good overview and important writing lessons for anyone who needs a review or just enjoys books about writing. Very back to basics. Liked this line, which sums up the tips: “Are you telling your story from your unique perspective, with a voice and style that’s clearly all you?” The best writing book I’ve read so far this month though is down there in #10. Check it out. "
+    },
+    {
+      "id": 6,
+      "ImageUrl": "../../../assets/images/FindMe.png",
+      "Title": "Find me",
+      "Author": "Name Surname",
+      "Year": 2021,
+      "Categories": [
+        {
+          "id": 4,
+          "name": "Horror"
+        }
+      ],
+      "ISBN": "0123456789",
+      "Description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      "ReviewerName": "Reviewer Name (FRA)",
+      "Review": "“Good overview and important writing lessons for anyone who needs a review or just enjoys books about writing. Very back to basics. Liked this line, which sums up the tips: “Are you telling your story from your unique perspective, with a voice and style that’s clearly all you?” The best writing book I’ve read so far this month though is down there in #10. Check it out. "
+    },
+    {
+      "ImageUrl": "../../../assets/images/MoneyPower.png",
+      "Title": "test",
+      "Author": "Name Surname",
+      "Year": 4,
+      "Categories": [
+        {
+          "id": 2,
+          "name": "History"
+        },
+        {
+          "id": 3,
+          "name": "Literary"
+        },
+        {
+          "id": 4,
+          "name": "Horror"
+        }
+      ],
+      "ISBN": 234,
+      "Description": "test",
+      "id": 8
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "General"
+    },
+    {
+      "id": 2,
+      "name": "History"
+    },
+    {
+      "id": 3,
+      "name": "Literary"
+    },
+    {
+      "id": 4,
+      "name": "Horror"
+    },
+    {
+      "id": 5,
+      "name": "Kids cxcx"
+    },
+    {
+      "id": 6,
+      "name": "mara"
+    },
+    {
+      "id": 7,
+      "name": "test3"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "marijamlsvc@gmail.com",
+      "password": "1111",
+      "admin": true
+    },
+    {
+      "id": 2,
+      "email": "milosradoman@gmail.com",
+      "password": "1111",
+      "admin": true
+    },
+    {
+      "id": 3,
+      "email": "danijelanikitin@gmail.com",
+      "password": "1111",
+      "admin": true
+    },
+    {
+      "email": "m@gmail.com",
+      "password": "1",
+      "admin": false,
+      "id": 5
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "1",
+      "admin": false,
+      "id": 6
+    }
+  ]
+}

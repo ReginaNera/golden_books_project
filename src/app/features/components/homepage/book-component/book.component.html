@@ -1,0 +1,15 @@
+
+<div class="card">
+    <h1>{{book.Title}}</h1>
+    <img [src]="book.ImageUrl" alt="Book" >
+    <div class="container">
+      <p class="text"><b>{{book.Author}}</b>, {{book.Year}} </p>
+       <div > 
+        <p class="text" *ngFor="let category of book.Categories">{{category.name}}</p>
+       </div>
+        <div class="description_container">
+            <p>{{book.Description}}</p>
+        </div>
+        <button (click) ="bookDetails(book)">BOOK OVERVIEW</button>
+    </div>
+  </div>

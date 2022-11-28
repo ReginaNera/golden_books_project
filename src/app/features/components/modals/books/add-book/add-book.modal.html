@@ -1,0 +1,60 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<form [formGroup] = "form" (ngSubmit)="onSubmit()">
+<div mat-dialog-content>
+        <ng-content select="h1" class="subtitle"></ng-content>
+
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="form-filed" appearance="fill">
+            <mat-label>ImageUrl</mat-label>
+            <input type="text" matInput formControlName="ImageUrl">
+          </mat-form-field></td>
+          <td><mat-form-field class="form-filed" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input type="text" matInput [value] = "data.hasValue ? data.book.Title : ''" formControlName="Title">
+          </mat-form-field></td>
+        </tr></table>
+        <br/>
+        <table class="example-full-width" cellspacing="0"><tr>
+            <td><mat-form-field class="form-filed" appearance="fill">
+              <mat-label>Author</mat-label>
+              <mat-select  formControlName="Author" >
+                <mat-option *ngFor="let author of data.authors" [value]="author">{{author}}</mat-option>
+              </mat-select>
+              <!-- <input type="text" matInput formControlName="Author"> -->
+            </mat-form-field></td>
+            <td><mat-form-field class="form-filed" appearance="fill">
+              <mat-label>Year</mat-label>
+              <input type="number" matInput formControlName="Year">
+            </mat-form-field></td>
+          </tr></table>
+          <br/>
+
+          <table class="example-full-width" cellspacing="0"><tr>
+            <td><mat-form-field class="form-filed" appearance="fill">
+              <mat-label>Categories</mat-label>
+              <!-- <input type="text" matInput formControlName="Categories"> -->
+              <mat-select formControlName="Categories" multiple >
+                <mat-option *ngFor="let category of data.categories"  [value]="category">{{category.name}}</mat-option>
+              </mat-select>
+            </mat-form-field></td>
+            <td><mat-form-field class="form-filed" appearance="fill">
+              <mat-label>ISBN</mat-label>
+              <input type="number" matInput formControlName="ISBN">
+            </mat-form-field></td>
+          </tr></table>
+          <br/>
+
+          <mat-form-field class="form-filed" appearance="fill">
+            <mat-label>Description</mat-label>
+            <input type="text" matInput formControlName="Description">
+          </mat-form-field>
+
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onCancelClick()">Cancel</button>
+      <button type="submit" mat-button cdkFocusInitial>Save</button>
+    </div>
+</form>
+          
+

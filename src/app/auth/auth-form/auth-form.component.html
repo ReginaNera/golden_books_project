@@ -1,0 +1,40 @@
+<div class="base"> 
+    <div class="title_container">
+        <h1 class="title">Golden Book.</h1>
+     </div>
+   <div class="card">
+    <div class="form-container">
+        <form [formGroup] = "form" (ngSubmit)="onSubmit()">
+
+        <ng-content select="h1" class="subtitle"></ng-content>
+
+      
+
+
+          <mat-form-field class="form-filed" appearance="fill">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email">
+          </mat-form-field>
+
+          <br>
+
+          <mat-form-field class="form-filed" appearance="fill">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="password">
+          </mat-form-field>
+    
+            <ng-content select="p"></ng-content>
+          
+
+            <div class="auth-form_action">
+              <ng-content select="button"></ng-content>
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+</div>
+
+

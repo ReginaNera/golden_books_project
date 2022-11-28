@@ -1,0 +1,136 @@
+
+.home-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+  
+    mat-toolbar {
+      height: 7vh;
+      justify-content: space-between;
+      background: linear-gradient(
+        180deg,
+        #827e71 0.25%,
+        rgba(242, 239, 220, 0) 99.73%
+      );
+      color: #f2efdc;
+      padding: 0 1.875rem;
+  
+      .btn-menu {
+        color: #f2efdc;
+        background-color: transparent;
+      }
+  
+      .title {
+        font-family: "Montserrat", sans-serif;
+        margin-left: 2.75rem;
+        font-weight: 700;
+        font-size: 1.625rem;
+      }
+  
+      .spacer {
+        flex: 1 1 auto;
+      }
+  
+      .btn-person {
+        background-color: #f2efdc;
+        border-radius: 0.25rem;
+        min-width: 0;
+        padding: 0;
+        line-height: 0;
+        color: #807b6f;
+      }
+    }
+  
+    .mat-expansion-indicator {
+      &::after {
+        color: #f2efdc;
+        transform: rotate(225) !important;
+      }
+    }
+  
+    mat-sidenav-container {
+      height: 86vh;
+  
+      mat-sidenav {
+        opacity: 0.5;
+        background-color: #160f09;
+          width: 19%;
+        mat-nav-list {
+          .home-button {
+            border-radius: 0;
+  
+            &:active {
+              background-color: #4c463d;
+              border-right: #f2efdc 0.24rem solid;
+            }
+  
+            .nav-link {
+              // home
+              color: #f2efdc;
+              display: flex;
+              padding-top: 1rem;
+              padding-bottom: 0.33rem;
+              margin-left: 0.6rem;
+              font-family: "Karla", sans-serif;
+              font-size: 1rem;
+              font-weight: 500;
+              letter-spacing: 0.1rem;
+              text-transform: uppercase;
+              width: 100%;
+            }
+          }
+  
+          mat-icon {
+            margin-right: 1.75rem;
+            color: #f2efdc;
+            transform: scale(1.45);
+          }
+  
+          mat-panel-title,
+          a {
+            font-family: "Karla";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 2.25rem;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.078rem;
+            text-transform: uppercase;
+            color: #d6d3c1;
+          }
+  
+     
+  
+          .mat-accordion {
+            .mat-expansion-panel {
+              background: none;
+  
+              .mat-expansion-panel-header:active {
+                border-radius: 0;
+                background-color: #4c463d;
+              }
+            }
+          }
+        }
+  
+        // mat-sidenav-content {
+        //   padding: 2rem;
+        // }
+      }
+    }
+
+    
+    .mat-drawer-container {
+        background-color: transparent
+        !important;
+       
+      }
+
+      .mat-expansion-panel {
+        background-color: transparent;
+      }
+  }
+  

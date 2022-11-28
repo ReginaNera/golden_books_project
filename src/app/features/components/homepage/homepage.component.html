@@ -1,0 +1,39 @@
+<div class="container">
+<div class="search">
+<mat-form-field class="form-filed field" appearance="fill">
+    <mat-label>Search by Book Name</mat-label>
+    <input type="text" (keyup) = "onSearch($event)" matInput >
+  </mat-form-field>
+
+<form [formGroup] = "categoryform">
+  <mat-form-field  class="form-filed field" appearance="fill">
+    <mat-label>Filter By Category</mat-label>
+    <!-- <mat-select multiple [(ngModel)]="selectedCategory" > -->
+    <mat-select multiple formControlName="category" >
+      <mat-option *ngFor="let category of categories"   [value]="category">{{category.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
+</div>
+
+
+
+
+<div class="cards" *ngIf="books">  
+<div *ngFor="let book of pageSlice | filterBooks : filter" >
+  <div *ngIf="search === '' || book.Title.toLowerCase().includes(search)">
+    <app-book [book]="book"></app-book>
+  </div>   
+    </div>
+</div>
+</div>
+<mat-paginator
+[length]="this.books.length"
+[pageSize]="3"
+[pageSizeOptions]="[3, 6]"
+aria-label="Select page"
+(page)="onPageChange($event)"
+>
+</mat-paginator>
+   
+

@@ -1,0 +1,58 @@
+
+.wrapper {
+  display: block;
+}
+.single-category-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 20.625rem;
+  height: 6.25rem;
+  background: #f2efdc;
+}
+
+
+mat-card-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #160f09;
+}
+
+
+.cat-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  float: left;
+  margin: 20px;
+}
+
+.app-cat-card {
+  margin: 20px;
+}
+
+
+.btn-add-category {
+  margin-top: 2rem;
+  border: none;
+  margin-right: auto;
+  margin-left: 1rem;
+  display: block;
+  width: 20.625rem;
+  height: 3.875rem;
+  background: #837e72;
+  border-radius: 4px;
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 0.07;
+  text-transform: uppercase;
+  color: #f2efdc;
+}

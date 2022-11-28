@@ -1,0 +1,93 @@
+<div class="home-layout">
+    <mat-toolbar>
+      <button mat-button class="btn-menu" (click)="sidenav?.toggle()">
+        <mat-icon class="menu" fontIcon="menu">menu</mat-icon>
+      </button>
+      <span class="title">Golden Book.</span>
+      <span class="spacer"></span>
+      <button mat-button class="btn-person">
+        <mat-icon class="person">person</mat-icon>
+         <mat-select  formControlName="Author" >
+                <mat-option (click) ="Logout()" >Logout</mat-option>
+         </mat-select>
+      </button>
+    </mat-toolbar>
+  
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav opened mode="side" class="app-sidenav">
+        <mat-nav-list role="list" class="nav">
+            <button
+              mat-button
+              class="home-button">
+              <a
+                class="nav-link"
+                routerLink="/homepage"
+                routerLinkActive="active"
+                ><mat-icon>home</mat-icon
+                >homepage</a
+              >
+            </button>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <mat-icon>list</mat-icon
+                  >Category
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+          <mat-list *ngFor="let category of categories$ | async" >
+            <button
+            mat-button
+            class="home-button">
+            <a
+              class="nav-link"
+              [routerLink]="['/homepage']"  [queryParams]="{category : category.name }"
+              routerLinkActive="active"
+              >{{category.name}}</a
+            >
+            </button>
+          </mat-list>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon>admin_panel_settings</mat-icon
+              >Admin
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list >
+            <button
+            mat-button
+            class="home-button">
+            <a
+              class="nav-link"
+              routerLink="books"
+              routerLinkActive="active"
+              >Books</a
+            >
+            </button>
+            <button
+            mat-button
+            class="home-button">
+            <a
+              class="nav-link"
+              routerLink="categories"
+              routerLinkActive="active"
+              >Categories</a
+            >
+            </button>
+          </mat-list>
+          
+            </mat-expansion-panel>
+        </mat-nav-list>
+        
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  
+ 
+  

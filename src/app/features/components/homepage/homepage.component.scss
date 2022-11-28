@@ -1,0 +1,41 @@
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    display: none !important;
+  } 
+  
+  
+  ::ng-deep.mat-form-field-flex {
+    background-color: #F2EFDC
+    !important;
+   
+  }
+
+
+.container {
+  width: 100%;
+  display: inline-block
+}
+
+  .field {
+    margin: 12px;
+    width: 45%;
+  }
+
+  .search {
+    float: right;
+    width: 100%;
+  }
+
+  .cards .card{
+    margin: 5%;
+    float: left;
+ 
+  }
+
+  .mat-paginator {
+    opacity: 0.8;
+    background-color: #160f09;  
+  color: #F2EFDC;}
+
+

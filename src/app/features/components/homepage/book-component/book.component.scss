@@ -1,0 +1,94 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #F2EFDC;
+    height: 300px;
+    width: 400px;
+    border-radius: 5px; /* 5px rounded corners */
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  img {
+    width: 135px;
+    height: 210px;
+    margin-bottom: 3.5%;
+    margin-left: 3.5%;
+    float: left;
+  }
+
+
+  h1 {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+
+
+color: #160F09;
+
+margin-left: 3.5%;
+margin-top: 3.5%;
+  }
+
+.description_container {
+    height: 120px ;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-left: 3%;
+    margin-top: 2%;
+    margin-right: 2%;
+
+}
+
+button {
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-right: 2%;
+
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 18px;
+/* identical to box height, or 150% */
+
+//display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 1.25px;
+text-transform: uppercase;
+
+color: #F2EFDC;
+background: #837E72;
+border-radius: 4px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.text {
+  display: inline;
+    padding-left: 3%;
+    margin-right: 2%;
+}
+
+

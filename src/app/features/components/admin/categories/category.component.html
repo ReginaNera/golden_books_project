@@ -1,0 +1,28 @@
+    <div class="wrapper">
+    <div class="categories"   *ngFor="let category of categories$ | async" >
+    <div class="cat-card">
+        <mat-card class="single-category-card">
+            <div class="cat-left">
+              <mat-card-title>Category Name:</mat-card-title>
+              <mat-card-subtitle>{{ category.name }}</mat-card-subtitle>
+            </div>
+            <div class="cat-right">
+              <mat-card-actions>
+                <button mat-button class="btn-mat edit-cat">
+                  <span class="material-icons create" (click)="editCategory(category)">edit</span>
+                </button>
+                <button mat-button class="btn-mat delete-cat" (click)="deleteCategory(category.id)">
+                  <span class="material-icons delete">delete</span>
+                </button>
+              </mat-card-actions>
+            </div>
+          </mat-card>
+    </div>
+    </div>
+    <div class="btn-wrapper">
+      <button mat-button class="btn-add-category" (click)="addCategory()">
+        <span class="materials-icons add-category"></span>
+        add new category
+      </button>
+    </div>
+</div>

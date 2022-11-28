@@ -1,0 +1,32 @@
+a
+::ng-deep.mat-form-field-flex {
+  background-color: #F2EFDC
+  !important;
+ 
+}
+.mat-dialog-title{
+background: #F2EFDC;
+}
+
+::ng-deep.mat-dialog-container{
+  width: 900px;
+  height: 500px;
+  background: #F2EFDC
+  !important;
+
+  }
+
+  .example-full-width {
+    width: 100%;
+  }
+
+  .form-filed{
+    width: 100%;
+
+  }
+
+  ::ng-deep.mat-form-field-appearance-fill .mat-form-field-flex {
+   background-color: rgba(0, 0, 0, 0); 
+}
+/* Inside auto layout */
+
